@@ -20,7 +20,6 @@ const NAV_LINKS = [
   { label: "Sobre", href: "#sobre" },
   { label: "Missão", href: "#missao" },
   { label: "Serviços", href: "#servicos" },
-  { label: "Contato", href: "#contato" },
 ];
 
 const STATS = [
@@ -114,7 +113,7 @@ export default function App() {
               <li key={link.href}>
                 <button
                   onClick={() => scrollTo(link.href)}
-                  className="text-xs text-muted-foreground hover:text-foreground tracking-[0.2em] uppercase transition-colors duration-200"
+                  className="text-xs text-muted-foreground hover:text-[#00FFC8] hover:drop-shadow-[0_0_6px_#00FFC8] tracking-[0.2em] uppercase transition-all duration-200"
                 >
                   {link.label}
                 </button>
@@ -145,7 +144,7 @@ export default function App() {
               <button
                 key={link.href}
                 onClick={() => scrollTo(link.href)}
-                className="text-left text-xs text-muted-foreground hover:text-foreground tracking-[0.2em] uppercase transition-colors"
+                className="text-left text-xs text-muted-foreground hover:text-[#00AEEF] hover:drop-shadow-[0_0_6px_#00AEEF] tracking-[0.2em] uppercase transition-all duration-200"
               >
                 {link.label}
               </button>
@@ -621,7 +620,7 @@ export default function App() {
               <button
                 key={link.href}
                 onClick={() => scrollTo(link.href)}
-                className="text-[10px] text-muted-foreground hover:text-foreground tracking-[0.2em] uppercase transition-colors"
+                className="text-[10px] text-muted-foreground hover:text-[#00FFC8] hover:drop-shadow-[0_0_6px_#00FFC8] tracking-[0.2em] uppercase transition-all duration-200"
                 style={{ fontFamily: "'JetBrains Mono', monospace" }}
               >
                 {link.label}
