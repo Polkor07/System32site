@@ -1,3 +1,4 @@
+import logoFull from "../assets/logo_full_transparent.png";
 import { useState, useEffect } from "react";
 import {
   Menu,
@@ -103,21 +104,8 @@ export default function App() {
       >
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
           {/* Logo */}
-          <button onClick={() => scrollTo("#hero")} className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-primary flex items-center justify-center flex-shrink-0">
-              <span
-                className="font-display font-bold text-xs text-primary-foreground leading-none"
-                style={{ fontFamily: "'Rajdhani', sans-serif" }}
-              >
-                S32
-              </span>
-            </div>
-            <span
-              className="font-display font-bold text-base tracking-widest text-foreground"
-              style={{ fontFamily: "'Rajdhani', sans-serif" }}
-            >
-              SYSTEM32
-            </span>
+          <button onClick={() => scrollTo("#hero")} className="flex items-center">
+  <img src={logoFull} alt="System32 Software House" className="h-9 w-auto object-contain" />
           </button>
 
           {/* Desktop nav */}
@@ -617,22 +605,9 @@ export default function App() {
       {/* ── FOOTER ──────────────────────────────────────────────────────── */}
       <footer className="border-t border-border py-10">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-5">
-          <div className="flex items-center gap-3">
-            <div className="w-7 h-7 bg-primary flex items-center justify-center">
-              <span
-                className="font-display font-bold text-[10px] text-primary-foreground"
-                style={{ fontFamily: "'Rajdhani', sans-serif" }}
-              >
-                S32
-              </span>
-            </div>
-            <span
-              className="font-display font-bold text-sm tracking-widest"
-              style={{ fontFamily: "'Rajdhani', sans-serif" }}
-            >
-              SYSTEM32
-            </span>
-          </div>
+          <div className="flex items-center">
+          <img src={logoFull} alt="System32 Software House" className="h-8 w-auto object-contain" />
+        </div>
 
           <p
             className="text-[10px] text-muted-foreground tracking-[0.2em]"
