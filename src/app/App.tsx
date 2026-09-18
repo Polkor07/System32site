@@ -259,8 +259,8 @@ export default function App() {
                   <p className="text-muted-foreground pl-3">→ Carregando módulos de sistema...</p>
                   <p className="text-muted-foreground pl-3">→ Configurando ambiente...</p>
                   <p>
-                    <span className="text-green-400">✓</span>{" "}
-                    <span className="text-green-400/80">Sistema inicializado</span>
+                    <span className="text-[#06402B]">✓</span>{" "}
+                    <span className="text-[#06402B]">Sistema inicializado</span>
                   </p>
                   <div className="pt-2">
                     <p>
